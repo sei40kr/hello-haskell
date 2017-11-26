@@ -12,3 +12,4 @@ There are some solutions of practical problems according to
 * [Haskell ラムダ 超入門](https://qiita.com/7shi/items/1345bf32003faff435cb)
 * [Haskell アクションとラムダ 超入門](https://qiita.com/7shi/items/1345bf32003faff435cb)
 * [Haskell IOモナド 超入門](https://qiita.com/7shi/items/d3d3492ddd90d47160f2)
+* [Haskell リストモナド 超入門](https://qiita.com/7shi/items/deb19c4cba933590ffbf)
