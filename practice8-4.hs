@@ -1,10 +1,12 @@
 -- practice8-4.hs
 -- author: Seong Yong-ju ( @sei40kr )
 mapMaybe f =
-  (`foldr` []) $ \x xs ->
-    case f x of
-      Just x' -> x' : xs
-      Nothing -> xs
+  foldr
+    (\x xs ->
+       case f x of
+         Just x' -> x' : xs
+         Nothing -> xs)
+    []
 
 fact 0 = Just 1
 fact n
