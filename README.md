@@ -14,3 +14,4 @@ There are some solutions of practical problems according to
 * [Haskell IOモナド 超入門](https://qiita.com/7shi/items/d3d3492ddd90d47160f2)
 * [Haskell リストモナド 超入門](https://qiita.com/7shi/items/deb19c4cba933590ffbf)
 * [Haskell Maybeモナド 超入門](https://qiita.com/7shi/items/c7d7eec066af0fe0688d)
+* [Haskell 状態系モナド 超入門](https://qiita.com/7shi/items/145f1234f8ec2af923ef)
