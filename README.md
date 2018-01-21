@@ -4,6 +4,28 @@ Where I learn Haskell.
 There are some solutions of practical problems according to
 [Haskell 超入門](http://qiita.com/7shi/items/145f1234f8ec2af923ef).
 
+## Get Started
+
+1. Install Haskell Tool Stack
+
+    ```sh
+    curl -sSL https://get.haskellstack.org/ | sh
+    ```
+
+1. Create sandbox
+
+    ```sh
+    # if needed
+    cabal sandbox delete
+    cabal sandbox init
+    ```
+
+1. Install package dependencies
+
+    ```sh
+    cabal update && cabal install --only-dependencies
+    ```
+
 ## References
 
 * [Haskell 超入門](http://qiita.com/7shi/items/145f1234f8ec2af923ef)
