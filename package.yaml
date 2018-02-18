@@ -1,0 +1,15 @@
+---
+author: 'Seong Yong-ju'
+copyright: '2018 Seong Yong-ju'
+dependencies:
+  - 'base >= 4.7 && < 5'
+  - mtl
+description: 'Please see the README on Github at <https://github.com/sei40kr/hello-haskell#readme>'
+executables:
+extra-source-files:
+  - README.md
+github: sei40kr/hello-haskell
+license: MIT
+maintainer: sei40kr@gmail.com
+name: hello-haskell
+version: 0.1.0.0
