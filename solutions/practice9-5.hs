@@ -11,7 +11,7 @@ bind a b = reader $ \r -> runReader (b (runReader a r)) r
 return' :: MonadReader r m => a -> m a
 return' x = reader $ const x
 
-ask' :: ReaderT Integer Identity Integer
+ask' :: ReaderT r Identity r
 ask' = reader id
 
 local' :: MonadReader t m => (t -> r) -> Reader r a -> m a
