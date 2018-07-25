@@ -5,19 +5,19 @@
 import           Control.Monad.Identity
 import           Control.Monad.Reader
 
-bind :: MonadReader r m => Reader r t -> (t -> Reader r a) -> m a
+bind :: Reader r a0 -> (a0 -> Reader r a1) -> Reader r a1
 bind a b = reader $ \r -> runReader (b (runReader a r)) r
 
-return' :: MonadReader r m => a -> m a
+return' :: a -> Reader r a
 return' x = reader $ const x
 
 ask' :: ReaderT r Identity r
 ask' = reader id
 
-local' :: MonadReader t m => (t -> r) -> Reader r a -> m a
+local' :: (r0 -> r1) -> Reader r1 a -> Reader r0 a
 local' f m = reader $ \r -> runReader m $ f r
 
-test :: Integer -> (Integer, Integer, Integer)
+test :: Int -> (Int, Int, Int)
 test x =
   (`runReader` x) $
   ask' `bind` \a ->
