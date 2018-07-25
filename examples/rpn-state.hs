@@ -2,7 +2,7 @@
 
 -- author: Seong Yong-ju <sei40kr@gmail.com>
 
-import Control.Monad.State
+import           Control.Monad.State
 
 push :: Int -> State [Int] ()
 push x = modify (x:)
@@ -16,22 +16,16 @@ pop = do
 eval :: String -> Int
 eval src = evalState (rpn (words src)) []
 
+op :: (Int -> Int -> Int) -> State [Int] ()
+op f = do
+  y <- pop
+  x <- pop
+  push $ f x y
+
 rpn :: [String] -> State [Int] Int
-rpn ("+":src) = do
-  y <- pop
-  x <- pop
-  push $ x + y
-  rpn src
-rpn ("-":src) = do
-  y <- pop
-  x <- pop
-  push $ x - y
-  rpn src
-rpn ("*":src) = do
-  y <- pop
-  x <- pop
-  push $ x * y
-  rpn src
+rpn ("+":src) = op (+) >> rpn src
+rpn ("-":src) = op (-) >> rpn src
+rpn ("*":src) = op (*) >> rpn src
 rpn [] = pop
 rpn (x:src) = do
   push $ read x
