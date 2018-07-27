@@ -4,6 +4,7 @@
 
 import           Control.Monad.Writer
 
+bind :: Writer [w] a0 -> (a0 -> Writer [w] a1) -> Writer [w] a1
 bind a b =
   writer $
   let (r1, w1) = runWriter a
@@ -13,8 +14,10 @@ bind a b =
 return' :: a -> Writer [w] a
 return' x = writer (x, [])
 
+tell' :: [w] -> Writer [w] ()
 tell' x = writer ((), x)
 
+test :: String
 test =
   execWriter $
   tell' "Hello" `bind` \_ ->
