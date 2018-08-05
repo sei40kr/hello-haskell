@@ -1,7 +1,7 @@
 import           Control.Monad.Identity
 import           Control.Monad.State
 
--- practice9-10.hs
+-- practice10-1.hs
 
 -- author: Seong Yong-ju <sei40kr@gmail.com>
 
