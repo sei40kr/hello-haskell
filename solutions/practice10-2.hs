@@ -1,7 +1,7 @@
 import           Control.Monad
 import           Control.Monad.State hiding (get, lift, modify)
 
--- practice10-2.hs ---
+-- practice10-2.hs
 
 -- author: Seong Yong-ju <sei40kr@gmail.com>
 
