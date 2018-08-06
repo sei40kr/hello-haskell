@@ -1,0 +1,29 @@
+#+TITLE: hello-haskell
+
+* Table of contents                                       :TOC_4_gh:noexport:
+- [[#get-started][Get Started]]
+- [[#references][References]]
+
+* Get Started
+
+  1. Install Haskell Tool Stack
+     #+BEGIN_SRC shell
+       curl -sSL https://get.haskellstack.org/ | sh
+     #+END_SRC
+  2. Get the appropriate GHC
+     #+BEGIN_SRC shell
+       stack setup
+     #+END_SRC
+
+
+* References
+
+  - [[http://qiita.com/7shi/items/145f1234f8ec2af923ef][Haskell 超入門]]
+  - [[http://qiita.com/7shi/items/1ce76bde464b4a55c143][Haskell 代数的データ型 超入門]]
+  - [[http://qiita.com/7shi/items/85afd7bbd5d6c4115ad6][Haskell アクション 超入門]]
+  - [[https://qiita.com/7shi/items/1345bf32003faff435cb][Haskell ラムダ 超入門]]
+  - [[https://qiita.com/7shi/items/1345bf32003faff435cb][Haskell アクションとラムダ 超入門]]
+  - [[https://qiita.com/7shi/items/d3d3492ddd90d47160f2][Haskell IO モナド 超入門]]
+  - [[https://qiita.com/7shi/items/deb19c4cba933590ffbf][Haskell リストモナド 超入門]]
+  - [[https://qiita.com/7shi/items/c7d7eec066af0fe0688d][Haskell Maybe モナド 超入門]]
+  - [[https://qiita.com/7shi/items/2e9bff5d88302de1a9e9][Haskell 状態系モナド 超入門]]
