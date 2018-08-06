@@ -7,13 +7,13 @@
 * Get Started
 
   1. Install Haskell Tool Stack
-     #+BEGIN_SRC shell
-       curl -sSL https://get.haskellstack.org/ | sh
-#+END_SRC
+     #+BEGIN_SRC sh
+       $ curl -sSL https://get.haskellstack.org/ | sh
+     #+END_SRC
   2. Get the appropriate GHC
-     #+BEGIN_SRC shell
-       stack setup
-#+END_SRC
+     #+BEGIN_SRC sh
+       $ stack setup
+     #+END_SRC
 
 
 * References
