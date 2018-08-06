@@ -9,11 +9,11 @@
   1. Install Haskell Tool Stack
      #+BEGIN_SRC shell
        curl -sSL https://get.haskellstack.org/ | sh
-     #+END_SRC
+#+END_SRC
   2. Get the appropriate GHC
      #+BEGIN_SRC shell
        stack setup
-     #+END_SRC
+#+END_SRC
 
 
 * References
