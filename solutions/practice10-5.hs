@@ -12,7 +12,7 @@ getch f = StateT getch
       | f x = Just (x, xs)
     getch _ = Nothing
 
-test :: [Char] -> Maybe [Char]
+test :: String -> Maybe String
 test = evalStateT $ do
   ch1 <- getch isUpper
   ch2 <- getch isLower
